@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8C757C7C-E1AF-4B3D-A417-C53B0DF2D9F2}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataStructuresConsoleApp</RootNamespace>
+    <AssemblyName>DataStructuresConsoleApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fenwick\FenwickTree.cs" />
+    <Compile Include="Heaps\MinHeap.cs" />
+    <Compile Include="Heaps\IHeap.cs" />
+    <Compile Include="Heaps\IIndexHeap.cs" />
+    <Compile Include="Heaps\IndexMaxHeap.cs" />
+    <Compile Include="Heaps\IndexMinHeap.cs" />
+    <Compile Include="Heaps\MaxHeap.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RedBlack\RedBlackNode.cs" />
+    <Compile Include="RedBlack\RedBlackTree.cs" />
+    <Compile Include="RWaySe\RWayTrieSeDictionary.cs" />
+    <Compile Include="RWaySe\RWayNode.cs" />
+    <Compile Include="RWaySe\RWayNodesList.cs" />
+    <Compile Include="RWaySe\RWayNodesPage.cs" />
+    <Compile Include="RWaySe\RWayTrieSe.cs" />
+    <Compile Include="RWay\RWayNode.cs" />
+    <Compile Include="RWay\RWayTrie.cs" />
+    <Compile Include="RWay\RWayTrieDictionary.cs" />
+    <Compile Include="RWay\RWayNodesList.cs" />
+    <Compile Include="Search\BinarySearch.cs" />
+    <Compile Include="Terany\TeranyTrie.cs" />
+    <Compile Include="Terany\TeranyNode.cs" />
+    <Compile Include="Terany\TeranyTrieDictionary.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
