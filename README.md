@@ -16,3 +16,5 @@ Terany Search Trie,
 
 also
 implementation of Binary Search algorithm with FindFirst, FindLast - (in O(log(n)) time)
+
+NOTE: in order to be independent data structures implemented with minimal abstraction
